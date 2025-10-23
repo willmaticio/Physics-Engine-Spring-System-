@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "springsim"
+version = "0.1.0"
+description = "Educational mass-spring physics engine with matrix-based integrators."
+authors = [
+  { name = "Codex" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "matplotlib>=3.6",
+  "scipy>=1.9"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+  "ruff"
+]
+
+[project.scripts]
+springsim-chain = "springsim.demo_chain:main"
+springsim-cloth = "springsim.demo_cloth:main"

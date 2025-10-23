@@ -1,0 +1,3 @@
+[console_scripts]
+springsim-chain = springsim.demo_chain:main
+springsim-cloth = springsim.demo_cloth:main
